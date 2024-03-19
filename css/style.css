@@ -13,6 +13,33 @@
     color: var(--main-color);
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: -8px;
+}
+
+header nav img {
+    width: 35%;
+    height: 35%;
+}
+
+nav a {
+    padding: 25px;
+}
+
+.navigation-links a:hover {
+    border-top: 2px #0065FC solid;
+    color: #0065FC;
+}
+
+.navigation-links a:focus {
+    border-top: 2px #0065FC solid;
+    color: #0065FC;
+}
+
 body {
     display: flex;
     justify-content: center;
