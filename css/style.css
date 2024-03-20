@@ -18,7 +18,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: -8px;
+    margin-top: -9px;
 }
 
 header nav img {
@@ -27,7 +27,13 @@ header nav img {
 }
 
 nav a {
-    padding: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.navigation-links a {
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .navigation-links a:hover {
@@ -83,6 +89,55 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/****** Recherche ***********/
+
+.formulaire-recherche {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.label-recherche {
+    background-color: #F2F2F2;
+    color: black;
+    border-radius: 15px 0px 0px 15px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#bar-recherche {
+    width: 15%;
+    height: 50px;
+    padding: 15px;
+    border-top: 1px #F2F2F2 solid;
+    border-left: none;
+    border-bottom: 1px #F2F2F2 solid;
+    border-right: none;
+}
+
+::placeholder {
+    font-weight: 700;
+    color: black;
+    opacity: 1;
+    font-size: 18px;
+}
+
+.recherche-bouton {
+    background-color: #0065FC;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.section-recherche .recherche-icone {
+    display: none;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -191,4 +246,18 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    .section-recherche .recherche-texte {
+        display: none;
+    }
+
+    .section-recherche .recherche-icone {
+        display: inline;
+        color: white;
+    }
+
+    #bar-recherche {
+        width: 90%;
+    }
+
 }
