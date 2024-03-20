@@ -93,13 +93,13 @@ a {
 
 /****** Recherche ***********/
 
-.formulaire-recherche {
+#search-form {
     display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.label-recherche {
+.search-label {
     background-color: #F2F2F2;
     color: black;
     border-radius: 15px 0px 0px 15px;
@@ -108,14 +108,17 @@ a {
     font-weight: 700;
 }
 
-#bar-recherche {
-    width: 15%;
+#search-bar {
+    width: 200px;
     height: 50px;
     padding: 15px;
     border-top: 1px #F2F2F2 solid;
     border-left: none;
     border-bottom: 1px #F2F2F2 solid;
     border-right: none;
+    font-weight: 700;
+    color: black;
+    font-size: 18px;
 }
 
 ::placeholder {
@@ -125,7 +128,7 @@ a {
     font-size: 18px;
 }
 
-.recherche-bouton {
+#search-button {
     background-color: #0065FC;
     text-align: center;
     font-weight: 700;
@@ -136,7 +139,7 @@ a {
     font-size: 18px;
 }
 
-.section-recherche .recherche-icone {
+.section-search .search-icon {
     display: none;
 }
 
@@ -247,16 +250,16 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 
-    .section-recherche .recherche-texte {
+    .section-search .search-button-text {
         display: none;
     }
 
-    .section-recherche .recherche-icone {
+    .section-search .search-icon {
         display: inline;
         color: white;
     }
 
-    #bar-recherche {
+    #search-bar {
         width: 90%;
     }
 
