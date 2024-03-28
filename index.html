@@ -20,7 +20,7 @@
         <header>
             <nav>
                 <a href="index.html">
-                    <img src="images/logo/Booki.png" alt="Logo Booki">
+                    <img src="images/logo/Booki.png" id="logo" alt="Logo Booki">
                     </a>
                 <div class="navigation-links">
                     <a href="#hebergements">Hébergements</a>
@@ -44,14 +44,19 @@
             </div>
 
             <div class="filters">
-                <p>Filtres</p>
-                <p class="filter-button"><i class="fa-solid fa-money-bill-wave filter-icon"></i>Économique</p>
-                <p class="filter-button"><i class="fa-solid fa-person filter-icon"></i>Familial</p>
-                <p class="filter-button"><i class="fa-solid fa-heart filter-icon"></i>Romantique</p>
-                <p class="filter-button"><i class="fa-solid fa-fire filter-icon"></i>Nos Pépites</p>
+                <h3 class="filters-title">Filtres</h3>
+                <div class="filter-element">
+                    <p class="filter-button"><i class="fa-solid fa-money-bill-wave filter-icon"></i>Économique</p>
+                    <p class="filter-button"><i class="fa-solid fa-person filter-icon"></i>Familial</p>
+                    <p class="filter-button"><i class="fa-solid fa-heart filter-icon"></i>Romantique</p>
+                    <p class="filter-button"><i class="fa-solid fa-fire filter-icon"></i>Nos Pépites</p>
+                </div>
             </div>
 
-            <p><span id="info-icon">&#8505;</span> Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="search-result">
+                <span id="info-icon">&#8505;</span>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
 
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -296,29 +301,27 @@
         </main>
 
         <footer>
-            <div class="footer">
-                <div class="footer-list">
-                    <h3 class="footer-title">À propos</h3>
-                    <ul>
-                        <li><a href=#>Fonctionnement du site</a></li>
-                        <li><a href=#>Conditions générales</a></li>
-                        <li><a href=#>Données et confidentialité</a></li>
-                    </ul>
-                </div>
-                <div class="footer-list">
-                    <h3 class="footer-title">Nos hébergements</h3>
-                    <ul>
-                        <li><a href=#>Charte qualité</a></li>
-                        <li><a href=#>Proposer votre hôtel</a></li>
-                    </ul>
-                </div>
-                <div class="footer-list">
-                    <h3 class="footer-title">Assistance</h3>
-                    <ul>
-                        <li><a href=#>Centre d'aide</a></li>
-                        <li><a href=#>Nous contacter</a></li>
-                    </ul>
-                </div>
+            <div class="footer-list">
+                <h3 class="footer-title">À propos</h3>
+                <ul>
+                    <li><a href=#>Fonctionnement du site</a></li>
+                    <li><a href=#>Conditions générales</a></li>
+                    <li><a href=#>Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h3 class="footer-title">Nos hébergements</h3>
+                <ul>
+                    <li><a href=#>Charte qualité</a></li>
+                    <li><a href=#>Proposer votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h3 class="footer-title">Assistance</h3>
+                <ul>
+                    <li><a href=#>Centre d'aide</a></li>
+                    <li><a href=#>Nous contacter</a></li>
+                </ul>
             </div>
         </footer>
 
